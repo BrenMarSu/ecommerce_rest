@@ -1,9 +1,10 @@
 from django.db import models
 
+from apps.automatic_crud.models import BaseModel as Base
 from simple_history.models import HistoricalRecords
 
 # Create your models here.
-class BaseModel(models.Model):
+class BaseModel(Base):
     """Model definition for BaseModel."""
 
     # TODO: Define fields here

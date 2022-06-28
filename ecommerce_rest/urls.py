@@ -40,6 +40,7 @@ urlpatterns = [
    path('users/',include('apps.users.api.routers')),
    path('products/',include('apps.products.api.routers')),
    path('expense/',include('apps.expense_manager.api.routers')),
+   path('automatic_crud/',include(('apps.automatic_crud.urls', 'desarrollo'))),
 ]
 
 urlpatterns += [

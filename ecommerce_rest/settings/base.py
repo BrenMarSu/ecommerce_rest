@@ -30,6 +30,7 @@ BASE_APPS = [
 
 LOCAL_APPS = [
     'apps.base',
+    'apps.automatic_crud',
     'apps.users',
     'apps.products',
     'apps.expense_manager',
@@ -37,7 +38,6 @@ LOCAL_APPS = [
 
 THIRD_APPS = [
     'corsheaders',
-    'automatic_crud',
     'rest_framework',
     #'rest_framework.authtoken',
     'rest_framework_simplejwt',  
@@ -78,7 +78,7 @@ ROOT_URLCONF = 'ecommerce_rest.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
